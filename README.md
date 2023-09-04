@@ -16,9 +16,16 @@ we made sure to set "Timestamp" as index, and Localize timezoneso that this *Dat
 # Explority Data Analysis [EDA]
 1. The distribution of PM2.5 values over the dataset.
    Fig
-2. A time series plot of the "PM2" readings in df to indicate the trend changing.
-3. A rolling average of the "P2" readings in df with using a window size of 168 (the number of hours in a week).
-4. Pca
-5. PcAf
 
+   n so that all "P2" readings above 500 are dropped from
+
+the dataset
+3. A time series plot of the "PM2" readings in df to indicate the trend changing.
+resample df to provide the mean "P2" reading for
+
+each hour. Use a forward fill to impute any missing values.
+
+4. A rolling average of the "P2" readings in df with using a window size of 168 (the number of hours in a week).
+
+# Models 
    
