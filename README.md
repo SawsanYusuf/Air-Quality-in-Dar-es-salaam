@@ -32,4 +32,30 @@ The plot shows a strong correlation between what happened in the previous hour a
 So, we trained the selected model on the training data. Finally, we evaluated model performance using the Mean Absolute Error (MAE) metric on the test data.
 
 ## 2. Autoregressive model:
+When we built the regression model, we looked at what happened a day ago and used that information to predict the present. But there is no reason to limit ourselves to a lag of one.
+
+So, how many lags should we have in our model to still have a good predictive model? The ACF and PACF plots are indispensable tools in this process.
+fig
+fig
+Beyond 28, we don’t get a lot of predictive power. So, we instituted an autoregressive model and fit it to the train data with the lag argument equal to 28.
+
+The residuals for the model:
+fig
+It appears that there is no discernible trend, and the residuals follow a normal distribution.
+
+The model performance:
+fig
+
+## 3. ARMA model:
+A couple of other important notes, We call the number of time steps we look back for our AR model as lag and P for shorthand. For our MA term, we use the error lag, and the letter we use to abbreviate that is Q. So, in the ARMA model, we want to decide what P and Q are.
+
+So, for the possible values for P, we’re going to create a range from 0 to 25 by step of 8. Next, we have the parameters for Q, and here we will do a smaller range from 0 to 3 by step of 1. Then, we trained an ARMA model with those hyperparameters.
+
+The different MAE values for each model:
+fig
+The best one is the model where P was 8 and Q was 0. So, we instituted our model and fit it to the train data with those hyperparameters. The final model performance:
+fig
+
+# Conclusion
+This project demonstrates the successful development of a machine-learning model for predicting air quality in a city. The model's accuracy and real-time capabilities make it a valuable tool for understanding and managing air quality levels.
 
