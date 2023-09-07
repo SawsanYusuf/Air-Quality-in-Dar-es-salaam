@@ -32,6 +32,8 @@ This scatter plot shows the PM2.5 mean reading for each hour as a function of th
 The plot shows a strong correlation between what happened in the previous hour and this hour. 
 
 Then, we trained the selected model on the training data with our nwe feature. Finally, we evaluated model performance using the Mean Absolute Error (MAE) metric on the test data.
+
+**The model performance**: 
 ![](https://github.com/SawsanYusuf/Air-Quality-in-Dar-es-salaam/blob/main/Images/Linear_regression_model.png)
 
 ## 2. Autoregressive model:
@@ -47,9 +49,12 @@ The residuals for the model:
 ![](https://github.com/SawsanYusuf/Air-Quality-in-Dar-es-salaam/blob/main/Images/Autoregressive_residuals.png)
 
 ![](https://github.com/SawsanYusuf/Air-Quality-in-Dar-es-salaam/blob/main/Images/autoregressive_residuals_distribution.png)
+
+
+
 It appears that there is no discernible trend, and the residuals follow a normal distribution.
 
-The model performance:
+**The model performance**:
 ![](https://github.com/SawsanYusuf/Air-Quality-in-Dar-es-salaam/blob/main/Images/Autoregressive_model.png)
 
 ## 3. ARMA model:
