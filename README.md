@@ -11,7 +11,7 @@ We set "timestamp" as an index. And Localized this DatetimeIndex for the datafra
 
 # Explority Data Analysis [EDA]
 1. The distribution of PM2.5 values over the dataset.
-![](main/assets/Images/PM2.5_distribution?raw=true)
+![](https://github.com/SawsanYusuf/Air-Quality-in-Dar-es-salaam/blob/main/Images/PM2.5_distribution.png)
 
 Based on this distribution, we dropped the "P2" readings above 100  from the dataset
    
