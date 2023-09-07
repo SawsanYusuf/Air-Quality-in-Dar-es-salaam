@@ -16,9 +16,11 @@ We set "timestamp" as an index. And Localized this DatetimeIndex for the datafra
 Based on this distribution, we dropped the "P2" readings above 100  from the dataset
    
 2. How do our "P2" readings move over time?
+![](https://github.com/SawsanYusuf/Air-Quality-in-Dar-es-salaam/blob/main/Images/Time_series.png)
 
 3. The general trend for the "P2" readings:
-   
+ ![](https://github.com/SawsanYusuf/Air-Quality-in-Dar-es-salaam/blob/main/Images/rolling_avarege.png)  
+
 # Model Selection 
 We used various algorithms: Linear Regression, Autoregressive model, and ARIMA model.
 
