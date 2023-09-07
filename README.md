@@ -48,8 +48,6 @@ Beyond 28, we don’t get a lot of predictive power. So, we instituted an autore
 The residuals for the model:
 ![](https://github.com/SawsanYusuf/Air-Quality-in-Dar-es-salaam/blob/main/Images/Autoregressive_residuals.png)
 
-![](https://github.com/SawsanYusuf/Air-Quality-in-Dar-es-salaam/blob/main/Images/autoregressive_residuals_distribution.png)
-
 
 
 It appears that there is no discernible trend, and the residuals follow a normal distribution.
@@ -62,10 +60,10 @@ A couple of other important notes, We call the number of time steps we look back
 
 So, for the possible values for P, we’re going to create a range from 0 to 25 by step of 8. Next, we have the parameters for Q, and here we will do a smaller range from 0 to 3 by step of 1. Then, we trained an ARMA model with those hyperparameters.
 
-The different MAE values for each model:
-fig
-The best one is the model where P was 8 and Q was 0. So, we instituted our model and fit it to the train data with those hyperparameters. The final model performance:
-fig
+The best one of the models is the model where P was 8 and Q was 0. So, we instituted our model and fit it to the train data with those hyperparameters. 
+
+**The final model performance**:
+![](https://github.com/SawsanYusuf/Air-Quality-in-Dar-es-salaam/blob/main/Images/ARMA_model.png)
 
 # Conclusion
 This project demonstrates the successful development of a machine-learning model for predicting air quality in a city. The model's accuracy and real-time capabilities make it a valuable tool for understanding and managing air quality levels.
